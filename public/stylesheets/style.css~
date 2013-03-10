@@ -1,0 +1,74 @@
+/* This application only works in Chrome because of
+   the speech recognition api. However, to keep
+   the look consistent even if the app fails in other
+   browsers, css considerations are taken for various
+   attributes.
+ */
+
+body {
+    background: rgba(0,0,0,0.8);
+}
+
+#logo {
+    padding-top: 175px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.link_icon img{
+}
+
+#lang_selectors {
+    padding-left: 10%;
+    color: rgba(255,255,255,0.9);
+    font-family: 'Lato';
+}
+
+a:link { text-decoration: none; }
+
+#background_img {
+    background:url('images/birdhousebg.jpg');
+    opacity: 0.5;
+    z-index: 0;
+    width: 320px;
+    height: 480px;
+}
+
+#content {
+    background:url('images/birdhousebg.jpg');
+    z-index: 1;
+    width: 320px;
+    height: 480px;
+    font-family: 'Lato';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*  480px - 25 px for mic  */
+.language_txt {
+    /*TODO: center with 'auto'*/
+    margin: 5px;
+    width: 310px;
+    height: 200px; 
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 15px; 
+    -moz-border-radius: 15px;
+    background: rgba(255,255,255,0.8);
+
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+    font-family: 'Lato', sans-serif;
+    word-wrap: break-word;
+
+    box-shadow: inset 1px 1px 10px 4px rgba(0,0,0,0.7);
+    
+}
+
+.speech_input {
+    font-size: 50px;
+    color: rgba(0,0,0,0.6);
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    outline: none;
+    border: none;
+}

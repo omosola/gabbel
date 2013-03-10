@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>Index</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato&effect=vintage|anaglyph"
+	    rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <script>
+      function transcribeAndTranslate(words){
+      
+      var old_content = $("#original_txt").val();
+      var new_content = old_content;
+      if (old_content.length > 0)
+      { new_content = new_content + ". "; }
+
+      new_content = new_content + words;
+      
+      $("#original_txt").val(new_content);
+      $("#original_txt").focus();
+      $("#mic").val("");
+      
+      source_lang = $("#source_lang").val()
+      if (source_lang.length < 5)
+      { source_lang = source_lang.substring(0,2); }
+      dest_lang = $("#dest_lang").val();
+      if (dest_lang.length < 5)
+      { dest_lang = dest_lang.substring(0,2); }
+      
+      translate(words, source_lang, dest_lang);
+      }
+      
+      function translate(words, source_lang, dest_lang) {
+      
+      var params = {
+      text: words,
+      from: source_lang,
+      to: dest_lang
+      }
+
+      var query = $.param(params);
+      
+      $.getJSON("translate?" + query, function(data) {
+      var translation = $("#translated_txt").val();
+      if (translation.length > 0)
+      { translation = translation + ". "; }
+
+      translation = translation + data.result;
+      
+      $("#translated_txt").val(translation);
+      });
+      
+      }
+      
+      function changeSourceLang() {
+      var new_source_lang = $("#source_lang").val();
+      $("#mic").attr("lang", new_source_lang);
+      console.log($("#mic").attr("lang"));
+      }
+    </script>
+    
+    
+    <div id="content">
+      <input type="text" id="mic" class="speech_input" lang="de-DE" \
+             x-webkit-speech onwebkitspeechchange="transcribeAndTranslate(this.value)" />
+      
+      <div contenteditable="true">
+        <textarea class="language_txt" id="original_txt"></textarea>
+        <label>Source: </label>
+        <select id="source_lang" onChange="changeSourceLang()">
+	  <option value="zh-cn">Mandarin Chinese</option>
+	  <option value="en-US">English</option>
+          <option value="fr-FR">French</option>
+          <option value="de-DE">German</option>
+	  <option value="ja">Japanese</option>
+	  <option value="id">Malay-Indonesian</option>
+	  <option value="pt">Portuguese</option>	  
+	  <option value="ru">Russian</option>
+          <option value="es-MX">Spanish</option>
+        </select>
+        <label>Dest: </label>
+        <select id="dest_lang">
+	  <option value="zh-cn">Mandarin Chinese</option>
+	  <option value="en-US">English</option>
+          <option value="fr-FR">French</option>
+          <option value="de-DE">German</option>
+	  <option value="ja">Japanese</option>
+	  <option value="id">Malay-Indonesian</option>
+	  <option value="pt">Portuguese</option>	  
+	  <option value="ru">Russian</option>
+          <option value="es-MX">Spanish</option>
+        </select>
+      </div>
+      <textarea class="language_txt" id="translated_txt"></textarea>
+    </div>
+  </body>
+</html>
