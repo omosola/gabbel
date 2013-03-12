@@ -113,10 +113,10 @@
               <li>No Spamming Followers.</li>
               <li>14 Day FREE trial.</li>
             </ul>
-            <a href="signup" class="bttn">
+<!--            <a href="signup" class="bttn">
                 <div class="twitter-icon"> </div>
                 Sign up for Perks now!
-            </a>
+            </a>-->
 
           </div>
           <div class="span7">
@@ -127,7 +127,7 @@
         <hr id="pricing" class="soften">
 
         <div class="row-fluid pricing">
-          <h2>14 DAY FREE TRIAL</h2>
+          <h2>7 DAY FREE TRIAL</h2>
           <a href="signup" title="Sign Up For Perks!"><img src="img/price.png"/></a>
         </div>
 
@@ -139,38 +139,16 @@
         <div class="row-fluid">
           <a href="signup" class="bttn">
               <div class="twitter-icon"> </div>
-              Sign up for Perks now!
+              Sign up for Gabbel!
           </a>
-
-          <ul class="bs-docs-social-buttons">
-            <li>
-              <div class="fb-like" data-href="https://www.perksapp.com" data-send="false" data-layout="button_count" style="padding-right:30px!important;top:-3px!important;"></div>
-            </li>
-            <li class="follow-btn">
-              <a href="https://twitter.com/perksapp" class="twitter-follow-button" data-show-count="true">Follow @perksapp</a>
-            </li>
-            <li class="tweet-btn">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.perksapp.com" data-via="perksapp" data-related="perksapp">Tweet</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
 
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=307290216021327";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     <script src="js/jquery.js"></script>
     <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="js/jquery.payment.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script src="https://js.stripe.com/v1/"></script>
   </body>
 </html>   
