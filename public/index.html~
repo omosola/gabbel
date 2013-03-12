@@ -24,8 +24,12 @@
       $("#original_txt").focus();
       $("#mic").val("");
       
-      source_lang = $("#source_lang").val().substring(0,2);
-      dest_lang = $("#dest_lang").val().substring(0,2);
+      source_lang = $("#source_lang").val()
+      if (source_lang.length < 5)
+      { source_lang = source_lang.substring(0,2); }
+      dest_lang = $("#dest_lang").val();
+      if (dest_lang.length < 5)
+      { dest_lang = dest_lang.substring(0,2); }
       
       translate(words, source_lang, dest_lang);
       }

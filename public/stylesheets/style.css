@@ -5,14 +5,12 @@
    attributes.
  */
 
-body {
-    background: rgba(0,0,0,0.8);
-}
-
 #logo {
-    padding-top: 175px;
     margin-right: auto;
     margin-left: auto;
+    color: rgba(51,51,51,1);
+    display: block;
+    float: left;
 }
 
 .link_icon img{
@@ -22,6 +20,67 @@ body {
     padding-left: 10%;
     color: rgba(255,255,255,0.9);
     font-family: 'Lato';
+}   
+
+/* Type */
+
+body {
+    background: rgba(0,0,0,0.8);
+    font-familiy: 'Lato', sans-serif;
+    color: #333;
+    padding-top: 72px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+		  font-family: 'Lato', sans-serif;
+		  font-weight: normal;
+}
+
+/* Header */
+header {
+       position: fixed;
+       z-index: 999;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       background: #ffffff;
+       background: rgba(255,255,255,0.95);
+       border-bottom: 1px solid #ccc8c7;
+       -webkit-box-shadow: 0 1px 0 rgba(200,200,200,0.3);
+}
+
+#header-image {
+	      min-height: 175px;
+	      width: 100%;
+	      background-size: cover;
+	      background-position: center;
+	      background: url('http://www.ciee.org/study-abroad/images/programs/0079/headers/mobile/taipei-taiwan-intensive%20chinese-language-culture-abroad-main.jpg');
+}
+
+/* Navigation */
+
+nav {
+    font-size: 18px;
+    line-height: 72px;
+}
+
+#desktop-nav ul {
+	     margin: 0;
+	     padding: 0;
+	     list-style: none;
+}
+
+#desktop-nav li {
+	     display: inline;
+	     margin-left: 8px;
+}
+
+#desktop-nav li:first-child {
+	     margin-left: 0;
+}
+
+nav .nav > li > a {
+    display: inline;
 }
 
 a:link { text-decoration: none; }
@@ -71,4 +130,10 @@ a:link { text-decoration: none; }
     background: transparent;
     outline: none;
     border: none;
+}
+
+/* Responsive Changes */
+
+@media (max-width: 767px) {
+
 }
