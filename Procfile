@@ -1,1 +1,1 @@
-web: node web.js -b "0.0.0.0:$POSRT"
+web: node web.js -b "0.0.0.0:$PORT"
