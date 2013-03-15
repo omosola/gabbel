@@ -13,17 +13,20 @@ var client = new MsTranslator({
     });
 
 
-app.configure(function() {
-	app.use(express.bodyParser());
-	return app.use(app.router);
-    });
-
+app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
 	response.sendfile(__dirname + '/public/index.html');
     });
+app.get('/index.html', function(request, response) {
+	response.sendfile(__dirname + '/public/index.html');
+    });
 
-app.get('/stylesheets/style.css', function(request, response){
+app.get('/app.html', function(request, response) {
+	response.sendfile(__dirname + '/public/app.html');
+});
+
+/*app.get('/stylesheets/style.css', function(request, response){
 	response.writeHead(200, {'Content-Type': 'text/plain'});
 	response.end(fs.readFileSync(__dirname + '/public/stylesheets/style.css'));
     });
@@ -31,7 +34,10 @@ app.get('/stylesheets/style.css', function(request, response){
 app.get('/images', function(request, response) {
 
 });
+app.get('/images/appview.jpg', function(request, response) {
 
+});
+*/
 app.get('/translate', function(request, response) {
 	var text = request.query.text;
 	var source_lang = request.query.from;

@@ -1,125 +1,211 @@
-/* This application only works in Chrome because of
-   the speech recognition api. However, to keep
-   the look consistent even if the app fails in other
-   browsers, css considerations are taken for various
-   attributes.
- */
-
-#logo {
-    margin-right: auto;
-    margin-left: auto;
-    color: rgba(51,51,51,1);
-    display: block;
-    float: left;
-}
-
-.link_icon img{
-}
-
-#lang_selectors {
-    padding-left: 10%;
-    color: rgba(255,255,255,0.9);
-    font-family: 'Lato';
-}   
-
-/* Type */
-
 body {
-    background: rgba(0,0,0,0.8);
-    font-familiy: 'Lato', sans-serif;
-    color: #333;
-    padding-top: 72px;
+     min-height: 800px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-		  font-family: 'Lato', sans-serif;
-		  font-weight: normal;
+.app {
+    background: url('http://fc00.deviantart.net/fs40/f/2009/045/3/9/Damask_Floral_Design_Wallpaper_by_angeldust.jpg');
+    min-height: 95%;
 }
 
-/* Header */
-header {
-       position: fixed;
-       z-index: 999;
-       top: 0px;
-       left: 0px;
-       width: 100%;
-       background: #ffffff;
-       background: rgba(255,255,255,0.95);
-       border-bottom: 1px solid #ccc8c7;
-       -webkit-box-shadow: 0 1px 0 rgba(200,200,200,0.3);
+#title {
+      font-family: 'Pacifico';
+      font-size: 25px;
 }
+
 
 /* Navigation */
-
-nav {
-    font-size: 18px;
-    line-height: 72px;
+.navbar-fixed-top {
+		  position: relative;
+		  z-index: 9999;
 }
 
-#desktop-nav ul {
-	     margin: 0;
-	     padding: 0;
-	     list-style: none;
+/* Headline */
+.headline {
+	  width: 100%;
+	  margin-top: -73px;
+	  min-height: 580px;
+	  position: relative;
+	  text-align: center;
+	  background-image: url('../images/birdhousebg.jpg');
+	  background-repeat: no-repeat;
+	  background-size: 100% 100%;
+
+	  text-shadow: 0 1px 3px rgba(0,0,0,0.4), 0 0 30px rgba(0,0,0,0.08);
+
+	  font-family: 'Open Sans';
 }
 
-#desktop-nav li {
-	     display: inline;
-	     margin-left: 8px;
+.headline p {
+	  line-height: 1.25;
+	  font-size: 20px;
+	  color: white;
+	  font-weight: 300;
+	  margin-bottom: 50px;
+	  margin-top: 20px;
 }
 
-#desktop-nav li:first-child {
-	     margin-left: 0;
+.headline h1 {
+	  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+	  letter-spacing: 12px!important;
+	  color: white;
+	  font-size: 3.2em!important;
+	  margin: 3px 0px;
+	  padding-top: 60px;
 }
 
-nav .nav > li > a {
-    display: inline;
+.headline .container {
+	  padding: 45px 0 55px 0;
 }
 
-a:link { text-decoration: none; }
-
-#background_img {
-    background:url('../images/birdhousebg.jpg');
-    opacity: 0.5;
-    z-index: 0;
-    width: 320px;
-    height: 480px;
+/* Features */
+.features-container {
+		    padding-top: 20px;
 }
 
-#content {
-    background:url('../images/birdhousebg.jpg');
-    z-index: 1;
-    width: 320px;
-    height: 480px;
-    font-family: 'Lato';
-    padding-left: 10px;
-    padding-right: 10px;
-}
-/*  480px - 25 px for mic  */
-.language_txt {
-    /*TODO: center with 'auto'*/
-    margin: 5px;
-    width: 310px;
-    height: 200px; 
-    border: 2px solid rgba(0,0,0,0.2);
-    border-radius: 15px; 
-    -moz-border-radius: 15px;
-    background: rgba(255,255,255,0.8);
-
-    font-size: 15px;
-    color: rgba(0,0,0,0.6);
-    font-family: 'Lato', sans-serif;
-    word-wrap: break-word;
-
-    box-shadow: inset 1px 1px 10px 4px rgba(0,0,0,0.7);
-    
+.features-container h2 {
+		    font-weight: normal;
+		    font-size: 20px;
+		    color: #444;
+		    margin: 0 0 1em 0;
 }
 
-.speech_input {
-    font-size: 50px;
-    color: rgba(0,0,0,0.6);
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    outline: none;
-    border: none;
+.features-container p {
+		    font-size: 14px;
+		    line-height: 20px;
+		    font-family: Helvetica, Arial, sans-serif;
+		    color: #888;
+		    font-weight: 500;
+}
+
+.features ul {
+	  list-style-type: none;
+}
+
+.features li {
+	  padding-bottom: 15px;
+}
+
+/* ------------- APP -------------  */
+#translated_text, #original_text {
+		  background: rgba(255,255,255,0.85);
+		  margin-top: 25px;
+		  width: 100%;
+		  font-size: 15px;
+		  min-height: 75%;
+		  word-wrap: break-word;
+		  box-shadow: inset 1px 1px 10px 4px rgba(0,0,0,0.7);
+
+}
+
+/* Speech Input */
+.speech_input input {
+	      background: transparent;
+	      border: 0;
+	      padding: 0;
+	      height: 50px;
+	      font-size: 50px;
+	      width: 50px;
+	      z-index: 999;
+	      
+}
+
+/* Language Selector */
+.styled-select select {
+	       width: 200px;
+	       background: transparent;
+	       height: 34px;
+	       border: 0;
+	       padding: 5px;
+	       font-size: 16px;
+	       border-radius: 0;
+	       -webkit-appearance: none;
+}
+
+.styled-select {
+	       max-width: 180px;
+	       overflow: hidden;
+	       background: url('../images/select_arrow.jpg') no-repeat right #ddd;
+	       border: 1px solid #ccc;
+}
+
+/* ------------- APP -------------  */
+
+/* Footer */
+.footer-container {
+		  margin: 0 auto;
+		  padding-left: 10px;
+}
+
+.footer-nav-links {
+		  text-align: right;
+		  padding-right: 20px;
+}
+
+.footer-nav-links li {
+		  display: inline;
+		  padding-left: 12px;
+}
+
+/* Faded out hr
+------------------------ */
+hr.soften {
+	  height: 1px;
+	  margin: 70px 0;
+	  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+	  border: 0;
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+       body > .navbar-fixed-top .brand {
+       	    float: left;
+	    margin-left: 0;
+	    padding-left: 10px;
+	    padding-right: 10px;
+       }
+
+       .headline {
+       		 padding-top: 100px!important;
+		 margin-top: -100px!important;
+       }
+
+       .headine h1 {
+       		padding-top: 10px!important;
+       }
+}*/
+
+/* Tablet to desktop [Perksapp.com]
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .headline {
+    margin-top: -20px; /* Offset bottom margin on .navbar */
+  }
+
+}
+
+/* Tablet 
+-------------------------- */
+@media (max-width: 767px) {
+       /* Remove any padding from body */
+       body {
+       	    padding-top: 0;
+       }
+
+       /* Widen headline to fill body padding */
+       .headline {
+       		 padding: 40px 20px;
+		 margin-top: -20px;
+		 margin-right: -20px;
+		 margin-left: -20px;
+       }
+       
+       .title {
+       	      font-size: 30px;
+       }
 }
