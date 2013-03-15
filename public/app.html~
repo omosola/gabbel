@@ -107,26 +107,26 @@
 	    <label>From:</label>
 	    <div class="styled-select">
               <select id="source_lang" onChange="changeSourceLang()">
-		<option value="zh-cn">Mandarin Chinese</option>
 		<option value="en-US">English</option>
 		<option value="fr-FR">French</option>
 		<option value="de-DE">German</option>
 		<option value="ja">Japanese</option>
 		<option value="id">Malay-Indonesian</option>
+		<option value="zh-cn">Mandarin Chinese</option>
 		<option value="pt">Portuguese</option>
 		<option value="ru">Russian</option>
-		<option value="es-MX">Spanish</option>
+		<option value="es-MX" selected="true">Spanish</option>
               </select>
 	    </div>
 	    <label>To:</label>
 	    <div class="styled-select">
 	      <select id="dest_lang">
-		<option value="zh-cn">Mandarin Chinese</option>
-		<option value="en-US">English</option>
+		<option value="en-US" selected="true">English</option>
 		<option value="fr-FR">French</option>
 		<option value="de-DE">German</option>
 		<option value="ja">Japanese</option>
 		<option value="id">Malay-Indonesian</option>
+		<option value="zh-cn">Mandarin Chinese</option>
 		<option value="pt">Portuguese</option>
 		<option value="ru">Russian</option>
 		<option value="es-MX">Spanish</option>

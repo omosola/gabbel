@@ -134,6 +134,7 @@ body {
 .footer-container {
 		  margin: 0 auto;
 		  padding-left: 10px;
+		  max-height: 20px;
 }
 
 .footer-nav-links {
