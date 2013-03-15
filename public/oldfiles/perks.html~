@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Perks - Twitter on Autopilot</title>
+      <base href="https://www.perksapp.com/"/>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="Putting your Twitter on autopilot.">
+      <meta name="keywords" content="Twitter, auto, follow back, automation, followers, direct message, DM, management, tweet, get followers, manage" />
+
+      <meta property="og:title" content="Perks - Twitter on Autopilot" />
+      <meta property="og:site_name" content="Perksapp.com"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="img/facebook-logo.png" />
+      <meta property="og:url" content="https://www.perksapp.com" />
+      <meta property="og:description" content="Putting your Twitter on autopilot." />
+
+      <link rel="icon" type="image/png" href="img/favicon.ico">
+      <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+      <link href="css/app.css" rel="stylesheet" media="screen">
+
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38613601-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+  </head>
+  <body>    
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="home"><img src="img/logo.png" alt="Perks Logo"/></a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+                      <li><a href="home">Home</a></li>
+            <li><a href="#features" class="anchorLink">Features</a></li>
+            <li><a href="#pricing" class="anchorLink">Pricing</a></li>
+            <li><a href="signup">Signup</a></li>
+            <li><a href="home/login" style="padding-right:0px!important;">Login</a></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="jumbotron masthead">
+      <div class="container">
+        <h1>TWITTER ON AUTOPILOT</h1>
+        <p><b>Perks</b> is the premier automation tool for <b>Twitter</b></p>
+
+        <a href="signup" class="bttn">
+            <div class="twitter-icon"> </div>
+            Sign up for Perks now!
+        </a>
+
+        <ul class="bs-docs-social-buttons">
+          <li>
+            <div class="fb-like" data-href="https://www.perksapp.com" data-send="false" data-layout="button_count" style="padding-right:30px!important;top:-3px!important;"></div>
+          </li>
+          <li class="follow-btn">
+            <a href="https://twitter.com/perksapp" class="twitter-follow-button" data-show-count="true">Follow @perksapp</a>
+          </li>
+          <li class="tweet-btn">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.perksapp.com" data-via="perksapp" data-related="perksapp">Tweet</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="marketing">
+        <div class="row-fluid">
+          <div class="span4">
+            <h2>What is Perks?</h2>
+            <p>Perks automates the management of your Twitter account. We find valuable followers and follow them in return, curate your friends, and direct message potential clients. You focus on content and Perks handles the rest.</p>
+          </div>
+          <div class="span4">
+            <h2>Who is it for?</h2>
+            <p>Love twitter and all of its 'perks', but find it cumbersome to search out valuable followers? Perks is perfect for those who use Twitter as a marketing tool for their business.</p>
+          </div>
+          <div class="span4">
+            <h2>Why use it?</h2>
+            <p>Twitter can be an excellent marketing tool for any business. Optimizing your twitter account on your own is time consuming though, and we understand that your time is valuable. Let Perks handle the messy part so you can focus on your business.</p>
+          </div>
+        </div>
+
+        <hr id="features" class="soften">
+
+        <div class="row-fluid features">
+          <div class="span5">
+            <h2>What can we do for you?</h2>
+            <ul class="green-checks">
+              <li>Automaticly follow back your new followers.</li>
+              <li>Find and follow users related to your businesses.</li>
+              <li>Intelligently unfollow users to optimize your Twitter following.</li>
+              <li>Automatic direct messaging.</li>
+              <li>Simple Analytics, update hourly.</li>
+              <li>No Spamming Followers.</li>
+              <li>14 Day FREE trial.</li>
+            </ul>
+<!--            <a href="signup" class="bttn">
+                <div class="twitter-icon"> </div>
+                Sign up for Perks now!
+            </a>-->
+
+          </div>
+          <div class="span7">
+            <img src="img/screen.jpg" alt="Perks Dashboard"/>
+          </div>
+        </div>
+
+        <hr id="pricing" class="soften">
+
+        <div class="row-fluid pricing">
+          <h2>7 DAY FREE TRIAL</h2>
+          <a href="signup" title="Sign Up For Perks!"><img src="img/price.png"/></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row-fluid">
+          <a href="signup" class="bttn">
+              <div class="twitter-icon"> </div>
+              Sign up for Gabbel!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.payment.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>   
