@@ -2,6 +2,11 @@ body {
      min-height: 800px;
 }
 
+.app {
+    background: url('http://fc00.deviantart.net/fs40/f/2009/045/3/9/Damask_Floral_Design_Wallpaper_by_angeldust.jpg');
+    min-height: 100%;
+}
+
 #title {
       font-family: 'Pacifico';
       font-size: 25px;
@@ -79,6 +84,15 @@ body {
 .features li {
 	  padding-bottom: 15px;
 }
+
+/* ------------- APP -------------  */
+#translated_text, #original_text {
+		  width: 100%;
+		  font-size: 20px;
+		  min-height: 400px;
+}
+
+
 
 /* Footer */
 .footer-container {

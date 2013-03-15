@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Gabbel</title>
+    <!-- Bootstrap -->
+    <link href="../public/web_dev_tools/boostrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  
+  <body>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../public/web_dev_tools/boostrap/js/bootstrap.min.js"></script>
+    <!-- Nav Bar -->
+    <div class="navbar navbar-fixed-top">
+      <ul>
+	<li>Link 1</li>
+	<li>Link 2</li>
+	<li>Link 3<li>
+      </ul>
+    </div>
+  </body>
+</html>

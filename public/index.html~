@@ -1,11 +1,18 @@
 <html>
   <head>
     <title>Index</title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato&effect=vintage|anaglyph"
-	    rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/marketing/\
+style.css">
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='styl\
+esheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='sty\
+lesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'\
+ rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='sty\
+lesheet' type='text/css'>
+    <script type="text/javascript" src="./web_dev_tools/jquery-1.9.1.min.js"></script>
+
   </head>
 
   <body>
@@ -63,8 +70,31 @@
       }
     </script>
     
-    
+    <style type="text/css">
+      textarea {
+      width: 60%;
+      height: 25%;
+      border-radius: 15px;
+      border: 1px solid rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.4);
+      }
+    </style>
+
+    <div id="header">
+      <div id="TopNav">
+        <div id="logo">
+          Gabbel
+        </div>
+        <ul>
+          <li><a href="#link1" class="scroll">About</a></li>
+          <li><a href="demo.html" class="scroll">Demo</a></li>
+          <li><a href="#link3" class="scroll">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div id="content">
+
       <input type="text" id="mic" class="speech_input" lang="de-DE" \
              x-webkit-speech onwebkitspeechchange="transcribeAndTranslate(this.value)" />
       
