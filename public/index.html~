@@ -28,10 +28,10 @@
 	  <div class="nav-collapse pull-right">
 	    <ul class="nav pull-right">
 	      <li><a href="index.html">Home</a></li>
-	      <li><a href="#features">Features</a></li>
+<!--	      <li><a href="#features">Features</a></li>-->
 	      <li><a href="app.html">Try it out</a></li>
 	      <li><a href="#">Signup</a></li>
-	      <li><a href="#">Login</a></li>
+<!--	      <li><a href="#">Login</a></li> -->
 	    </ul>
             <!-- .nav, .navbar-search, .navbar-form, etc -->
 	  </div> <!-- ./nav-collapse -->
@@ -44,52 +44,13 @@
       <div class="container">
 	<h1>REAL-TIME CONVERSATION TRANSLATION</h1>
 	<p>
-	  <b>Gabbel</b> makes sure you always understand.
+	  <b>Gabbel</b> puts a stop to the language barrier.
 	</p>
+<!--	<div class="container">
+	  <a class="button" href="#">Sign up Now!</a>
+	</div>-->
       </div>
     </div>
-    <!-- Description of App -->
-    <div class="container">
-      <div class="features-container">
-	<div class="row-fluid">
-	  <div class="span4">
-	    <h2>Transcribe</h2>
-	    <p>
-	      Sed pellentesque risus molestie orci interdum quis pretium felis pretium. Proin quis consequat sapien. Donec a consectetur justo.
-	    </p>
-	  </div>
-	  <div class="span4">
-	    <h2>Translate</h2>
-	    <p>
-	      Duis malesuada, justo id euismod mattis, nunc metus egestas nibh, in pellentesque arcu velit vitae lacus. Nullam sed porta augue. Suspendisse potenti. Vivamus lacus quam, condimentum in tempor vel, rhoncus non orci.
-	    </p>
-	  </div>
-	  <div class="span4">
-	    <h2>Multiple Languages</h2>
-	    <p>
-	      Donec iaculis ultrices justo nec imperdiet. Morbi volutpat consequat ligula vel tempus. Pellentesque massa libero, mattis ac volutpat sit amet, porta at neque.
-	    </p>
-	  </div>
-	</div>
-	<hr id="features" class="soften">
-	<a name="#features" ></a>
-	<div class="row-fluid features">
-	  <div class="span5">
-	    <h2>Our Great Features</h2>
-	    <ul class="icons">
-	      <li><i class="icon-cog"></i>Conversation translation </li>
-	      <li><i class="icon-cog"></i>Over 30 Recognized Languages and Dialects</li>
-	      <li><i class="icon-cog"></i>Powerful Speech Recognition</li>
-	      <li><i class="icon-cog"></i>Ease of Use</li>
-	      <li><i class="icon-cog"></i>Ability to edit text in app</li>
-	    </ul>
-	  </div>
-	  <div class="span7 pull-right">
-	    <img src="./public/images/appview.jpg"></img>
-	  </div>
-	</div>
-      </div>
-    </div> <!-- ./container {for features} -->
 
     <div class="footer">
       <div class="footer-container">
