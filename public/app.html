@@ -9,57 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-   <script>
-      function transcribeAndTranslate(words){
-      
-      var old_content = $("#original_text").val();
-      var new_content = old_content;
-      if (old_content.length > 0)
-      { new_content = new_content + ". "; }
-
-      new_content = new_content + words;
-      
-      $("#original_text").val(new_content);
-      $("#original_text").focus();
-      $("#mic").val("");
-      
-      source_lang = $("#source_lang").val()
-      if (source_lang.length < 5)
-      { source_lang = source_lang.substring(0,2); }
-      dest_lang = $("#dest_lang").val();
-      if (dest_lang.length < 5)
-      { dest_lang = dest_lang.substring(0,2); }
-      
-      translate(words, source_lang, dest_lang);
-      }
-      
-      function translate(words, source_lang, dest_lang) {
-      
-      var params = {
-      text: words,
-      from: source_lang,
-      to: dest_lang
-      }
-
-      var query = $.param(params);
-      
-      $.getJSON("translate?" + query, function(data) {
-      var translation = $("#translated_text").val();
-      if (translation.length > 0)
-      { translation = translation + ". "; }
-
-      translation = translation + data.result;
-      
-      $("#translated_text").val(translation);
-      });
-            }
-      
-      function changeSourceLang() {
-      var new_source_lang = $("#source_lang").val();
-      $("#mic").attr("lang", new_source_lang);
-      console.log($("#mic").attr("lang"));
-      }
-    </script>
+   <script src="public/translate.js"></script>
   </head>
   
 
@@ -101,38 +51,48 @@
 	  </div>
 	  <div class="span2">
 	    <div class="speech_input">
-	      <input type="text" id="mic" lang="de-DE" \
-		     x-webkit-speech onwebkitspeechchange="transcribeAndTranslate(this.value)">
+	      <input type="text" id="mic" lang="en-US" \
+		     x-webkit-speech onwebkitspeechchange="transcribeAndTranslate(this.value, false)">
 	    </div>
-	    <label>From:</label>
+	    <label>From</label>
 	    <div class="styled-select">
               <select id="source_lang" onChange="changeSourceLang()">
-		<option value="en-US">English</option>
-		<option value="fr-FR">French</option>
-		<option value="de-DE">German</option>
-		<option value="ja">Japanese</option>
-		<option value="id">Malay-Indonesian</option>
-		<option value="zh-cn">Mandarin Chinese</option>
-		<option value="pt">Portuguese</option>
-		<option value="ru">Russian</option>
-		<option value="es-MX" selected="true">Spanish</option>
-              </select>
-	    </div>
-	    <label>To:</label>
-	    <div class="styled-select">
-	      <select id="dest_lang">
+		<option value="ar">Arabic</option>
 		<option value="en-US" selected="true">English</option>
 		<option value="fr-FR">French</option>
 		<option value="de-DE">German</option>
+		<option value="it">Italian</option>
 		<option value="ja">Japanese</option>
-		<option value="id">Malay-Indonesian</option>
 		<option value="zh-cn">Mandarin Chinese</option>
 		<option value="pt">Portuguese</option>
 		<option value="ru">Russian</option>
 		<option value="es-MX">Spanish</option>
               </select>
 	    </div>
+	    <label>To</label>
+	    <div class="styled-select">
+	      <select id="dest_lang" onChange="changeDestLang()">
+		<option value="ar">Arabic</option>
+		<option value="en-US"> English</option>
+		<option value="fr-FR">French</option>
+		<option value="de-DE">German</option>
+		<option value="it">Italian</option>
+		<option value="ja">Japanese</option>
+		<option value="zh-cn">Mandarin Chinese</option>
+		<option value="pt">Portuguese</option>
+		<option value="ru">Russian</option>
+		<option value="es-MX">Spanish</option>
+              </select>
+	    </div>
+	    <!-- Second Speech Input -->
+	    <div class="speech_input">
+	      <input type="text" id="reverse_mic" lang="ar" \
+		     x-webkit-speech onwebkitspeechchange="transcribeAndTranslate(this.value, true)">
+	    </div>
+	    <!-- End of Second Speech Input -->
+	    
 	  </div>
+	  
 	  <div class="span5" contenteditable="true">
 	    <textarea id="translated_text"></textarea>
 	  </div>

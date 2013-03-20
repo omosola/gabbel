@@ -30,7 +30,7 @@
       if (dest_lang.length < 5)
       { dest_lang = dest_lang.substring(0,2); }
       
-      translate(words, source_lang, dest_lang);
+   
       }
       
       function translate(words, source_lang, dest_lang) {
@@ -76,7 +76,7 @@
 	    </a>
 	    
 	    <!-- Be sure to leave the brand out there if you want it shown -->
-	    <a class="brand" id="title" href="#">Gabbel</a>
+	    <a class="brand" id="title" href="index.html">Gabbel</a>
 	    
 	    <!-- Everything you want hidden at 940px or less, place within here -->
 	    
@@ -107,15 +107,20 @@
 	    <label>From:</label>
 	    <div class="styled-select">
               <select id="source_lang" onChange="changeSourceLang()">
-		<option value="en-US">English</option>
+		<option value="ar">Arabic</option>
+		<option value="ca">Catalan</option>
+		<option value="en-US" selected="true">English</option>
 		<option value="fr-FR">French</option>
 		<option value="de-DE">German</option>
+		<option value="it">Italian</option>
 		<option value="ja">Japanese</option>
 		<option value="id">Malay-Indonesian</option>
 		<option value="zh-cn">Mandarin Chinese</option>
 		<option value="pt">Portuguese</option>
 		<option value="ru">Russian</option>
-		<option value="es-MX" selected="true">Spanish</option>
+		<option value="es-MX">Spanish</option>
+		<option value="vi">Vietnamese</option>
+		<option value="yo">Yoruba</option>
               </select>
 	    </div>
 	    <label>To:</label>
