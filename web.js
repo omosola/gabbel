@@ -15,6 +15,10 @@ var client = new MsTranslator({
 
 app.use('/public', express.static(__dirname + '/public'));
 
+app.post('/', function(request, response) {
+	response.sendfile(__dirname + '/public/index.html');
+    });
+
 app.get('/', function(request, response) {
 	response.sendfile(__dirname + '/public/index.html');
     });
