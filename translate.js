@@ -3,7 +3,7 @@ var url = require('url');
 var MsTranslator = require('mstranslator');
 // TODO: Make this info private //
 var client = new MsTranslator({
-        client_id: "Solaode1",
+        client_id: "xxxxxxxxx",
         client_secret: "xxxxxxxxxxxxxxxxx"
     });
 
