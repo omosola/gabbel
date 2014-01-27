@@ -8,8 +8,8 @@ var url = require('url');
 var MsTranslator = require('mstranslator');
 // TODO: Make this info private //                                              
 var client = new MsTranslator({
-        client_id: "Solaode1",
-        client_secret: "c38SiJaHmSS4ov8H/EVrmG0ps+rNZ/BgeDLUyCmJPXA="
+        client_id: "xxxxxxxxxxxx",
+        client_secret: "xxxxxxxxxxxxxxxxxxxxxx"
     });
 
 
